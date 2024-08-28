@@ -8,6 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'myfirstProject';
 
-  name : string = ''
+  name : string = '';
+
+  textVal : string = 'Angular';
+  isDisabled : boolean = false;
+
+  display() {
+    alert('Hello')
+  }
  
 }

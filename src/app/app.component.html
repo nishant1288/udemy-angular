@@ -5,4 +5,12 @@
 <h2> {{name}} </h2>
 
 <app-forms></app-forms>
+
+<h2>Property Binding</h2>
+<input type="text" placeholder="interpolation" value="{{textVal}}" disabled="{{isDisabled}}">
+<input type="text" placeholder="property binding" [value]="textVal" [disabled]="isDisabled">
+
+<h2>Event Binding</h2>
+<button (click)="display()" >Click Event Binding</button>
+
 <router-outlet></router-outlet>
