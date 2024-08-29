@@ -12,5 +12,10 @@
 
 <h2>Event Binding</h2>
 <button (click)="display()" >Click Event Binding</button>
+<input type="text" (keyup)="onInputClick($event)" (select)="onSelect()" (keydown.shift.enter)="onKeyDown()" (cut)="onCut()">
+
+<h2>Shift key Status</h2>
+<input (keydown.shift.y)="keyevent()" type="text">
+<input (keydown)="secondKeyEvent($event)" type="text" >
 
 <router-outlet></router-outlet>
