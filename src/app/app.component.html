@@ -18,4 +18,19 @@
 <input (keydown.shift.y)="keyevent()" type="text">
 <input (keydown)="secondKeyEvent($event)" type="text" >
 
+<h2>Submit Data on button click</h2>
+<input [(ngModel)]="inputValue" type="text">
+<button (click)="OnSubmitBtn()">Submit</button>
+<h3>{{dynamicInputValue}}</h3>
+
+<h2>Counter Example</h2>
+<h3>{{counter}}</h3>
+<button (click)="add()">+</button> <button (click)="subtract()">-</button> <button (click)="reset()">Reset</button>
+
+<h2>Cunter Example Second</h2>
+<h3>{{countValue}}</h3>
+<button (click)="counterFunc('incr')" >+</button>
+<button (click)="counterFunc('decr')">-</button>
+<button (click)="counterFunc('reset')">Reset</button>
+
 <router-outlet></router-outlet>
