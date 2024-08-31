@@ -1,0 +1,19 @@
+<div>
+    <h1>Directives</h1>
+    <div>
+        <h2>Structural Directives</h2>
+        <div *ngIf="display">If display is true</div>
+
+        <div *ngIf="num > 0">{{num}} is greater than 0</div>
+        <div *ngIf="num == 0">{{num}} is equal to 0</div>
+        <div *ngIf="num < 0">{{num}} is less then 0</div>
+
+        <button (click)="onBtnClick()" *ngIf="displayMsg"> Hide </button>
+        <button (click)="onBtnClick()" *ngIf="!displayMsg"> Show </button>
+        <p *ngIf="displayMsg">Hello, I am displayed !</p>
+
+        <button (click)="displayMsg = !displayMsg" >INLINE CODE</button>
+    </div>
+
+
+</div>
