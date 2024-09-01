@@ -13,4 +13,20 @@ export class DirectivesComponent {
   onBtnClick() {
     this.displayMsg = !this.displayMsg;
   }
+
+  showStack : boolean = false;
+  showStackFunc() {
+    this.showStack = !this.showStack;
+  }
+
+  frontEnd = [
+    {
+      id : 1,
+      name : 'Angular'
+    },
+    {
+      id : 2,
+      name : 'React'
+    }
+  ]
 }

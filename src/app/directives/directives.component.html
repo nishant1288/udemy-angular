@@ -2,18 +2,52 @@
     <h1>Directives</h1>
     <div>
         <h2>Structural Directives</h2>
-        <div *ngIf="display">If display is true</div>
+        <div>
+            <h3>ngIf</h3>
+            <div *ngIf="display">If display is true</div>
 
-        <div *ngIf="num > 0">{{num}} is greater than 0</div>
-        <div *ngIf="num == 0">{{num}} is equal to 0</div>
-        <div *ngIf="num < 0">{{num}} is less then 0</div>
+            <div *ngIf="num > 0">{{num}} is greater than 0</div>
+            <div *ngIf="num == 0">{{num}} is equal to 0</div>
+            <div *ngIf="num < 0">{{num}} is less then 0</div>
 
-        <button (click)="onBtnClick()" *ngIf="displayMsg"> Hide </button>
-        <button (click)="onBtnClick()" *ngIf="!displayMsg"> Show </button>
-        <p *ngIf="displayMsg">Hello, I am displayed !</p>
+            <button (click)="onBtnClick()" *ngIf="displayMsg"> Hide </button>
+            <button (click)="onBtnClick()" *ngIf="!displayMsg"> Show </button>
+            <p *ngIf="displayMsg">Hello, I am displayed !</p>
 
-        <button (click)="displayMsg = !displayMsg" >INLINE CODE</button>
+            <button (click)="displayMsg = !displayMsg">INLINE CODE</button>
+        </div>
+
+        <div>
+            <h3>ngFor</h3>
+            <div *ngFor="let value of frontEnd">
+                <ul>
+                    <li>{{value.id}}</li>
+                    <li>{{value.name}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h3>Combination of ngIf and ngFor</h3>
+            <button *ngIf="showStack" (click)="showStackFunc()">Hide</button>
+            <button *ngIf="!showStack" (click)="showStackFunc()">Show</button>
+
+            <button (click)="showStackFunc()"> {{ showStack ? 'Hide' : 'Show'}}</button>
+            
+            <div *ngIf="showStack">
+                <div *ngFor="let value of frontEnd">
+                    <ul>
+                        <li>{{value.id}}</li>
+                        <li>{{value.name}}</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
     </div>
+
+
 
 
 </div>

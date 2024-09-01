@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { FormsComponent } from './forms/forms.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormsComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule,

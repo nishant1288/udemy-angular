@@ -1,38 +1,6 @@
 
-<label>Name:</label>
-<input type="text" [(ngModel)] = "name" />
-<hr>
-<h2> {{name}} </h2>
+<!-- <app-event-binding></app-event-binding> -->
 
-<app-forms></app-forms>
-
-<h2>Property Binding</h2>
-<input type="text" placeholder="interpolation" value="{{textVal}}" disabled="{{isDisabled}}">
-<input type="text" placeholder="property binding" [value]="textVal" [disabled]="isDisabled">
-
-<h2>Event Binding</h2>
-<button (click)="display()" >Click Event Binding</button>
-<input type="text" (keyup)="onInputClick($event)" (select)="onSelect()" (keydown.shift.enter)="onKeyDown()" (cut)="onCut()">
-
-<h2>Shift key Status</h2>
-<input (keydown.shift.y)="keyevent()" type="text">
-<input (keydown)="secondKeyEvent($event)" type="text" >
-
-<h2>Submit Data on button click</h2>
-<input [(ngModel)]="inputValue" type="text">
-<button (click)="OnSubmitBtn()">Submit</button>
-<h3>{{dynamicInputValue}}</h3>
-
-<h2>Counter Example</h2>
-<h3>{{counter}}</h3>
-<button (click)="add()">+</button> <button (click)="subtract()">-</button> <button (click)="reset()">Reset</button>
-
-<h2>Cunter Example Second</h2>
-<h3>{{countValue}}</h3>
-<button (click)="counterFunc('incr')" >+</button>
-<button (click)="counterFunc('decr')">-</button>
-<button (click)="counterFunc('reset')">Reset</button>
-
-<app-directives></app-directives>
+<!-- <app-directives></app-directives> -->
 
 <router-outlet></router-outlet>
