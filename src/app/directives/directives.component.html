@@ -1,5 +1,13 @@
 <div>
     <h1>Directives</h1>
+
+    <div>
+        <h2>Attribute Directives</h2>
+
+        <p [ngClass]="'updateStyles'">Updated Paragraph Style</p>
+
+    </div>
+
     <div>
         <h2>Structural Directives</h2>
         <div>
@@ -45,8 +53,26 @@
             
         </div>
 
+        <div>
+            <h3>ngSwitch Directive</h3>
+            <div [ngSwitch]="age">
+                <p *ngSwitchCase="10">{{age}}</p>
+                <p *ngSwitchCase="20">{{age}}</p>
+                <p *ngSwitchDefault="">{{age}}</p>
+            </div>
+
+            <h3>Check Eligibility</h3>
+            <input type="number" (input)="checkEligibility()" [(ngModel)]="ageVal" >
+            <div [ngSwitch]="isEligible">
+                <p *ngSwitchCase="true">Eligible</p>
+                <p *ngSwitchDefault="">Not Eligible</p>
+            </div>
+
+        </div>
+
     </div>
 
+  
 
 
 
