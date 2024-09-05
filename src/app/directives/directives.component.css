@@ -4,3 +4,11 @@
     background-color: rgb(176, 176, 248);
     padding: 10px;
 }
+
+.italicText {
+    font-style: italic;
+}
+
+.txt {
+    background-color: red;
+}

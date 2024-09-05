@@ -1,0 +1,35 @@
+.parent {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+h1,
+button {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.para-white {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.para-dark {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}

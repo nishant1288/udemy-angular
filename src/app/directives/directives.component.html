@@ -4,7 +4,7 @@
     <div>
         <h2>Attribute Directives</h2>
 
-        <p [ngClass]="'updateStyles'">Updated Paragraph Style</p>
+        <p [ngClass]="updateStylesole">Updated Paragraph Style</p>
 
     </div>
 
@@ -68,6 +68,11 @@
                 <p *ngSwitchDefault="">Not Eligible</p>
             </div>
 
+        </div>
+
+        <div>
+            <h2>Change color on input</h2>
+            <input [ngClass]="{ txt : hasValue }" type="text" placeholder="enter something" (input)="checkValue($event)">
         </div>
 
     </div>

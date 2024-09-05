@@ -45,5 +45,18 @@ export class DirectivesComponent {
 
   // -------------------------------> Attribute Directives <-------------------------------
 
-  // updateStyles = 'updateStyles'
+  updateStylesole = 'updateStyles italicText'
+
+  hasValue: boolean = false;
+  txt = 'txt'
+
+  checkValue(e: any) {
+    if (e.target.value !== '') {
+      this.hasValue = true;
+    }
+    else {
+      this.hasValue = false;
+    }
+  }
+
 }
