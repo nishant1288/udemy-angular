@@ -13,4 +13,15 @@ export class DirectiveToggleModeComponent {
     this.darkMode = !this.darkMode;
   }
 
+  colorMode = 'para-white';
+
+  toggleColorMode() {
+    if (this.colorMode == 'para-white') {
+      this.colorMode = 'para-dark';
+    }
+    else {
+      this.colorMode = 'para-white'
+    }
+  }
+
 }

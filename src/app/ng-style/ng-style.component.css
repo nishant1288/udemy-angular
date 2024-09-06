@@ -1,0 +1,24 @@
+.parent {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+form {
+    border: 1px solid black;
+    width: 50%;
+    margin: 32px auto;
+    padding: 20px;
+}
+
+.form-group {
+    border: 1px solid red;
+    margin: 12px auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+}

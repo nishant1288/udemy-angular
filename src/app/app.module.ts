@@ -8,6 +8,7 @@ import { FormsComponent } from './forms/forms.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { DirectiveToggleModeComponent } from './directive-toggle-mode/directive-toggle-mode.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DirectiveToggleModeComponent } from './directive-toggle-mode/directive-
     FormsComponent,
     DirectivesComponent,
     EventBindingComponent,
-    DirectiveToggleModeComponent
+    DirectiveToggleModeComponent,
+    NgStyleComponent
   ],
   imports: [
     BrowserModule,

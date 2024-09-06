@@ -1,9 +1,21 @@
 <div class="parent">
-    <h1>Toggle Mode</h1>
+    <h1>Toggle Mode Self</h1>
 
     <button (click)="changeMode()">{{darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}}</button>
 
     <div [ngClass]="darkMode ? 'para-dark' : 'para-white'">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde omnis facere praesentium modi dolore corrupti
+            quos quisquam ea libero? Praesentium nulla quaerat dolorum libero. Vero nostrum nobis doloremque
+            consequatur? Et!</p>
+    </div>
+</div>
+
+<div class="parent">
+    <h1>Toggle Mode UDEMY</h1>
+
+    <button (click)="toggleColorMode()">{{colorMode == 'para-dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}}</button>
+
+    <div [ngClass]="colorMode">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde omnis facere praesentium modi dolore corrupti
             quos quisquam ea libero? Praesentium nulla quaerat dolorum libero. Vero nostrum nobis doloremque
             consequatur? Et!</p>

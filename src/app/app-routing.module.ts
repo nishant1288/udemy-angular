@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DirectivesComponent } from './directives/directives.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { DirectiveToggleModeComponent } from './directive-toggle-mode/directive-toggle-mode.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'directive-mode',
     component: DirectiveToggleModeComponent
+  },
+  {
+    path : 'ngStyle',
+    component : NgStyleComponent
   }
 ];
 
