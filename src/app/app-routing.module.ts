@@ -4,6 +4,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { DirectiveToggleModeComponent } from './directive-toggle-mode/directive-toggle-mode.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgContainerComponent } from './ng-container/ng-container.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path : 'ngStyle',
     component : NgStyleComponent
+  },
+  {
+    path : 'ngContainer',
+    component : NgContainerComponent
   }
 ];
 

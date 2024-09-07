@@ -1,0 +1,17 @@
+<div>
+    <h2>Normal Division</h2>
+    <p>Para 1</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+    <p>Para 4</p>
+</div>
+
+<ng-container>
+    <h2>NG Container</h2>
+    <p>Para 1</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+    <p>Para 4</p>
+</ng-container>
+
+<hr>
