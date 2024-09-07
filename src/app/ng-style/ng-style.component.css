@@ -1,24 +1,51 @@
 .parent {
     width: 80%;
     margin: auto;
-    text-align: center;
     margin-top: 20px;
     border: 1px solid black;
 }
 
+h2 {
+    text-align: center;
+}
+
 form {
-    border: 1px solid black;
+    border: 1px solid white;
     width: 50%;
     margin: 32px auto;
     padding: 20px;
+    box-shadow: 1px 1px 5px rgb(196, 195, 195);
 }
 
 .form-group {
-    border: 1px solid red;
     margin: 12px auto;
-    text-align: left;
+}
+
+input {
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(196, 195, 195);
 }
 
 label {
     display: block;
+}
+
+button {
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    border: 1px solid white;
+    background-color: azure;
+    box-shadow: 0px 3px 5px gray;
+    transition: all 0.2s;
+}
+
+button:active {
+    transform: scale(0.9);
 }

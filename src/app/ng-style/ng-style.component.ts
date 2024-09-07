@@ -17,4 +17,27 @@ export class NgStyleComponent {
     fontSize: '28px'
   }
 
+  nm: string = '';
+  em: string = '';
+  isEmailValid: boolean = false;
+  isFormSubmitted: boolean = false;
+
+  checkEmailValidation(email: string): void {
+    if (email.includes('@') && email.includes('.com')) {
+      this.isEmailValid = true;
+    }
+    else {
+      this.isEmailValid = false;
+    }
+  }
+
+  onSubmit() {
+    if (this.nm && this.isEmailValid) {
+      this.isFormSubmitted = true;
+    }
+    else {
+      this.isFormSubmitted = false;
+    }
+  }
+
 }
