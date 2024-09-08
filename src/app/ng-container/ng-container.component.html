@@ -1,13 +1,29 @@
+<div>
+    <h2>Normal Division</h2>
+    <p>Para 1</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+    <p>Para 4</p>
+</div>
 
+<ng-container>
+    <h2>NG Container</h2>
+    <p>Para 1</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+    <p>Para 4</p>
+</ng-container>
 
-<div *ngFor="let subject of subjects" >
+<hr>
+
+<div *ngFor="let subject of subjects">
     <div *ngIf="subject.scode">
         <span style="margin-right: 4px;">{{subject.scode}}</span>
         <span>{{subject.sname}}</span>
     </div>
 </div>
 
-<ng-container *ngFor="let subject of subjects" >
+<ng-container *ngFor="let subject of subjects">
     <div *ngIf="subject.scode">
         <span style="margin-right: 4px;">{{subject.scode}}</span>
         <span>{{subject.sname}}</span>

@@ -10,6 +10,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { DirectiveToggleModeComponent } from './directive-toggle-mode/directive-toggle-mode.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgContainerComponent } from './ng-container/ng-container.component';
+import { NgTemplateComponent } from './ng-template/ng-template.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NgContainerComponent } from './ng-container/ng-container.component';
     EventBindingComponent,
     DirectiveToggleModeComponent,
     NgStyleComponent,
-    NgContainerComponent
+    NgContainerComponent,
+    NgTemplateComponent
   ],
   imports: [
     BrowserModule,

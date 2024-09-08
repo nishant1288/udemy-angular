@@ -1,0 +1,17 @@
+<ng-container *ngIf="isAuthorized; else unauthorized">
+    <p>Authorized User</p>
+</ng-container>
+
+<ng-template #unauthorized>
+    <p>Unauthorized User</p>
+</ng-template>
+
+<ng-container *ngIf="subjects.length > 0; else noSubject">
+    <ul>
+        <li *ngFor="let subject of subjects" >{{subject}}</li>
+    </ul>
+</ng-container>
+
+<ng-template #noSubject>
+    No Subjects foumd
+</ng-template>
