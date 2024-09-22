@@ -8,10 +8,23 @@
 
 <ng-container *ngIf="subjects.length > 0; else noSubject">
     <ul>
-        <li *ngFor="let subject of subjects" >{{subject}}</li>
+        <li *ngFor="let subject of subjects">{{subject}}</li>
     </ul>
 </ng-container>
 
 <ng-template #noSubject>
     No Subjects foumd
 </ng-template>
+
+<div>
+    <ng-container class="input">
+        <label>Name : </label>
+        <input type="text" [(ngModel)]="userName" placeholder="Enter your name">
+    </ng-container>
+    <ng-container *ngIf="userName; else noName">
+        Entered name is {{userName}}
+    </ng-container>
+    <ng-template #noName>
+        Please enter your name.
+    </ng-template>
+</div>

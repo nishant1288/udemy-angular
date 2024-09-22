@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class NgTemplateComponent {
   isAuthorized : boolean = false;
 
-  subjects = []
+  subjects = [];
+
+  userName: string = ''
 }
 
