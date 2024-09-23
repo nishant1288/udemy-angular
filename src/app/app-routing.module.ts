@@ -6,6 +6,7 @@ import { DirectiveToggleModeComponent } from './directive-toggle-mode/directive-
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgContainerComponent } from './ng-container/ng-container.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
+import { NgTemplateOutletComponent } from './ng-template-outlet/ng-template-outlet.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path : 'ngTemplate',
     component : NgTemplateComponent
+  },
+  {
+    path : 'ngTemplateOutlet',
+    component : NgTemplateOutletComponent
   }
 ];
 

@@ -1,0 +1,23 @@
+<ng-template #showTemp let-msg="showMsg">
+    Message : {{msg}}
+</ng-template>
+
+<ng-container *ngTemplateOutlet="showTemp, context : {showMsg : 'This is an NG Template'}">
+</ng-container>
+
+<br>
+
+<ng-template #showCalc let-value="showValue" >
+    Output : {{value}}
+</ng-template>
+
+<ng-container *ngTemplateOutlet="showCalc, context : {showValue : calc()}">
+</ng-container>
+
+<br>
+
+<ng-template #showDetailValue let-details = 'showDetails'>
+My name is {{details.name}}. I am {{details.age}} years old. I live in {{details.age}}.
+</ng-template>
+
+<ng-container *ngTemplateOutlet="showDetailValue, context : {showDetails : showPersonDetail}" ></ng-container>
