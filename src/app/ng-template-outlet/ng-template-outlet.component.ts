@@ -20,4 +20,11 @@ export class NgTemplateOutletComponent {
     age : 24,
     location : 'Dombivli'
   }
+
+  employee = [
+    { id : 1, name : 'Nishant' },
+    { id : 2, name : 'Veer' },
+    { id : 3, name : 'Rao' }
+  ]
+
 }

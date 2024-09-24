@@ -16,8 +16,27 @@
 
 <br>
 
+<h2>Using context object parameter</h2>
 <ng-template #showDetailValue let-details = 'showDetails'>
 My name is {{details.name}}. I am {{details.age}} years old. I live in {{details.age}}.
 </ng-template>
 
 <ng-container *ngTemplateOutlet="showDetailValue, context : {showDetails : showPersonDetail}" ></ng-container>
+
+<h2>Using $implicit</h2>
+<ng-template #showImplicit let-details>
+    My name is {{details.name}}. I am {{details.age}} years old. I live in {{details.age}}.
+</ng-template>
+
+<ng-container *ngTemplateOutlet="showImplicit, context : {$implicit : showPersonDetail} "></ng-container>
+
+<h2>Using implicit for array</h2>
+
+<ng-template #showEmp let-employee = 'empDetails'>
+    <div *ngFor="let emp of employee">
+        {{emp.id}}
+        {{emp.name}}
+    </div>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="showEmp, context : {empDetails : employee}"></ng-container>
