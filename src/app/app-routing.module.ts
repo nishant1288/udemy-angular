@@ -7,6 +7,7 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgContainerComponent } from './ng-container/ng-container.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { NgTemplateOutletComponent } from './ng-template-outlet/ng-template-outlet.component';
+import { ComponentLifecycleComponent } from './component-lifecycle/component-lifecycle.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path : 'ngTemplateOutlet',
     component : NgTemplateOutletComponent
+  },
+  {
+    path : 'component-lifecyle',
+    component : ComponentLifecycleComponent
   }
 ];
 

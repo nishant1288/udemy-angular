@@ -12,6 +12,7 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgContainerComponent } from './ng-container/ng-container.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { NgTemplateOutletComponent } from './ng-template-outlet/ng-template-outlet.component';
+import { ComponentLifecycleComponent } from './component-lifecycle/component-lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NgTemplateOutletComponent } from './ng-template-outlet/ng-template-outl
     NgStyleComponent,
     NgContainerComponent,
     NgTemplateComponent,
-    NgTemplateOutletComponent
+    NgTemplateOutletComponent,
+    ComponentLifecycleComponent
   ],
   imports: [
     BrowserModule,
