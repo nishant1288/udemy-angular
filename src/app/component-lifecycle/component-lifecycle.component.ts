@@ -7,10 +7,21 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 })
 export class ComponentLifecycleComponent implements OnChanges{
 
-  @Input() inputValue : string = ''
+  @Input() inputValue : string = '';
+
+  @Input() inputPropValue : string = '';
+  prevValue : string | undefined;
+  currValue : string | undefined;
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('ngOnChanges triggered');
+    if(changes['inputPropValue'])
+    {
+      this.prevValue = changes['inputPropValue'].previousValue;
+      this.currValue = changes['inputPropValue'].currentValue;
+      console.log('Previous Value', this.prevValue);
+      console.log('Current Value', this.currValue);
+      console.log('Changes Parameter', changes)
+    }
     console.log(changes);
   }
 

@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'myfirstProject';
 
-  inputValue : string ='hello'
+  inputValue : string ='hello';
+
+  inputPropValue : string = 'input value';
+
+  update() {
+    this.inputPropValue = 'input value 2'
+  }
   
 }
