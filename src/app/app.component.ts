@@ -18,6 +18,14 @@ export class AppComponent implements OnInit {
 
   counte: number = 0;
 
+  user = {
+    name : 'Nishant'
+  }
+
+  upDateUser() {
+    this.user.name = 'Rao';
+  }
+
   ngOnInit(): void {
     this.updateCounter();
   }
