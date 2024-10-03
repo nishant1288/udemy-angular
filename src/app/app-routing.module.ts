@@ -8,6 +8,7 @@ import { NgContainerComponent } from './ng-container/ng-container.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { NgTemplateOutletComponent } from './ng-template-outlet/ng-template-outlet.component';
 import { ComponentLifecycleComponent } from './component-lifecycle/component-lifecycle.component';
+import { AftercontentinitComponent } from './aftercontentinit/aftercontentinit.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path : 'component-lifecyle',
     component : ComponentLifecycleComponent
+  },
+  {
+    path : 'aftercontentinit',
+    component : AftercontentinitComponent
   }
 ];
 

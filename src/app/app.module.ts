@@ -14,6 +14,8 @@ import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { NgTemplateOutletComponent } from './ng-template-outlet/ng-template-outlet.component';
 import { ComponentLifecycleComponent } from './component-lifecycle/component-lifecycle.component';
 import { NgDoCheckComponent } from './ng-do-check/ng-do-check.component';
+import { AftercontentinitComponent } from './aftercontentinit/aftercontentinit.component';
+import { AftercontentchildComponent } from './aftercontentchild/aftercontentchild.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { NgDoCheckComponent } from './ng-do-check/ng-do-check.component';
     NgTemplateComponent,
     NgTemplateOutletComponent,
     ComponentLifecycleComponent,
-    NgDoCheckComponent
+    NgDoCheckComponent,
+    AftercontentinitComponent,
+    AftercontentchildComponent
   ],
   imports: [
     BrowserModule,

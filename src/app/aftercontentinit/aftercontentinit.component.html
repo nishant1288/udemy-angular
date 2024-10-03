@@ -1,0 +1,10 @@
+<h1>Parent Component</h1>
+
+<button (click)="sendDataToChild()" >Click to Generate</button>
+<p>{{dataFromParent}}</p>
+
+<h2>Below Sending to Child</h2>
+
+<app-aftercontentchild>
+    <h2>{{dataFromParent}}</h2>
+</app-aftercontentchild>
