@@ -1,16 +1,20 @@
-import { AfterContentInit, Component } from '@angular/core';
+import { AfterContentInit, Component, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'app-aftercontentinit',
   templateUrl: './aftercontentinit.component.html',
   styleUrls: ['./aftercontentinit.component.css']
 })
-export class AftercontentinitComponent implements AfterContentInit {
+export class AftercontentinitComponent implements DoCheck {
 
   dataFromParent  = ''
 
-  ngAfterContentInit(): void {
-    console.log('ngAfterContentInit invokeds')
+  // ngAfterContentInit(): void {
+  //   console.log('ngAfterContentInit invokeds')
+  // }
+
+  ngDoCheck(): void {
+    console.log('ngDocHECK WAS INVOKED..')
   }
 
   sendDataToChild() {
