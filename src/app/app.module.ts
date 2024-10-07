@@ -16,6 +16,8 @@ import { ComponentLifecycleComponent } from './component-lifecycle/component-lif
 import { NgDoCheckComponent } from './ng-do-check/ng-do-check.component';
 import { AftercontentinitComponent } from './aftercontentinit/aftercontentinit.component';
 import { AftercontentchildComponent } from './aftercontentchild/aftercontentchild.component';
+import { AftercontentcheckedComponent } from './aftercontentchecked/aftercontentchecked.component';
+import { AftercontentcheckedchildComponent } from './aftercontentcheckedchild/aftercontentcheckedchild.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { AftercontentchildComponent } from './aftercontentchild/aftercontentchil
     ComponentLifecycleComponent,
     NgDoCheckComponent,
     AftercontentinitComponent,
-    AftercontentchildComponent
+    AftercontentchildComponent,
+    AftercontentcheckedComponent,
+    AftercontentcheckedchildComponent
   ],
   imports: [
     BrowserModule,

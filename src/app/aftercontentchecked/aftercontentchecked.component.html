@@ -1,0 +1,12 @@
+<h1>After Content Checked Parent</h1>
+
+<button (click)="sendData()" >Send Data to Child</button>
+
+<app-aftercontentcheckedchild>
+    <h2>{{data}}</h2>
+    <div #wrapperinparentchild >
+        Wrapper present in child inside parent.
+    </div>
+</app-aftercontentcheckedchild>
+
+
