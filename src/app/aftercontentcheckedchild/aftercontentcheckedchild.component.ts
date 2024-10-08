@@ -1,11 +1,11 @@
-import { AfterContentChecked, AfterContentInit, Component, ContentChild, ElementRef, ViewChild } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewInit, Component, ContentChild, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-aftercontentcheckedchild',
   templateUrl: './aftercontentcheckedchild.component.html',
   styleUrls: ['./aftercontentcheckedchild.component.css']
 })
-export class AftercontentcheckedchildComponent implements AfterContentInit, AfterContentChecked {
+export class AftercontentcheckedchildComponent implements AfterContentInit, AfterContentChecked, AfterViewInit {
   @ViewChild('childwrapper') wrapper! : ElementRef;
   @ContentChild('wrapperinparentchild') content! : ElementRef;
 
@@ -17,5 +17,12 @@ export class AftercontentcheckedchildComponent implements AfterContentInit, Afte
 
   ngAfterContentChecked(): void {
     console.log('ngaftercontentchecked was invoked')
+  }
+
+  ngAfterViewInit(): void {
+    const divElement : HTMLElement = this.wrapper.nativeElement;
+    divElement.style.color = 'goldenrod';
+    divElement.style.fontSize = '18px'
+    console.log('ngAfterViwInit hook invokded')
   }
 }
