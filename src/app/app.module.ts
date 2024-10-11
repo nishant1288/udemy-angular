@@ -18,6 +18,8 @@ import { AftercontentinitComponent } from './aftercontentinit/aftercontentinit.c
 import { AftercontentchildComponent } from './aftercontentchild/aftercontentchild.component';
 import { AftercontentcheckedComponent } from './aftercontentchecked/aftercontentchecked.component';
 import { AftercontentcheckedchildComponent } from './aftercontentcheckedchild/aftercontentcheckedchild.component';
+import { NgDestroyComponent } from './ng-destroy/ng-destroy.component';
+import { DestroyChildComponent } from './destroy-child/destroy-child.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { AftercontentcheckedchildComponent } from './aftercontentcheckedchild/af
     AftercontentinitComponent,
     AftercontentchildComponent,
     AftercontentcheckedComponent,
-    AftercontentcheckedchildComponent
+    AftercontentcheckedchildComponent,
+    NgDestroyComponent,
+    DestroyChildComponent
   ],
   imports: [
     BrowserModule,

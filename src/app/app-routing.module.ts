@@ -10,6 +10,7 @@ import { NgTemplateOutletComponent } from './ng-template-outlet/ng-template-outl
 import { ComponentLifecycleComponent } from './component-lifecycle/component-lifecycle.component';
 import { AftercontentinitComponent } from './aftercontentinit/aftercontentinit.component';
 import { AftercontentcheckedComponent } from './aftercontentchecked/aftercontentchecked.component';
+import { NgDestroyComponent } from './ng-destroy/ng-destroy.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path : 'aftercontentchecked',
     component : AftercontentcheckedComponent
+  },
+  {
+    path : 'destroy',
+    component : NgDestroyComponent
   }
 ];
 

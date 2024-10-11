@@ -1,18 +1,18 @@
-import { AfterContentChecked, AfterContentInit, AfterViewInit, Component, ContentChild, ElementRef, ViewChild } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, ContentChild, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-aftercontentcheckedchild',
   templateUrl: './aftercontentcheckedchild.component.html',
   styleUrls: ['./aftercontentcheckedchild.component.css']
 })
-export class AftercontentcheckedchildComponent implements AfterContentInit, AfterContentChecked, AfterViewInit {
+export class AftercontentcheckedchildComponent implements AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
   @ViewChild('childwrapper') wrapper! : ElementRef;
   @ContentChild('wrapperinparentchild') content! : ElementRef;
 
   ngAfterContentInit(): void {
     console.log('ngaftercontentinit invoked');
-    console.log('ngaftercontentinit child', this.wrapper);
-    console.log('ngaftercntetninit parent', this.content)
+    // console.log('ngaftercontentinit child', this.wrapper);
+    // console.log('ngaftercntetninit parent', this.content)
   }
 
   ngAfterContentChecked(): void {
@@ -24,5 +24,9 @@ export class AftercontentcheckedchildComponent implements AfterContentInit, Afte
     divElement.style.color = 'goldenrod';
     divElement.style.fontSize = '18px'
     console.log('ngAfterViwInit hook invokded')
+  }
+
+  ngAfterViewChecked(): void {
+    console.log('ngAfterHook was invoked')
   }
 }
