@@ -11,6 +11,7 @@ import { ComponentLifecycleComponent } from './component-lifecycle/component-lif
 import { AftercontentinitComponent } from './aftercontentinit/aftercontentinit.component';
 import { AftercontentcheckedComponent } from './aftercontentchecked/aftercontentchecked.component';
 import { NgDestroyComponent } from './ng-destroy/ng-destroy.component';
+import { ParentComponent } from './decorators/parent/parent.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path : 'destroy',
     component : NgDestroyComponent
+  },
+  {
+    path : 'decorator',
+    component : ParentComponent
   }
 ];
 
