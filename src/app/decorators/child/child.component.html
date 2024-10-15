@@ -1,2 +1,19 @@
 <h2> Child Component </h2>
 <p>{{recieveMsg}}</p>
+
+<div>
+    {{recieveCourses | json}}
+
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let course of recieveCourses">
+                <td>{{course.id}}</td>
+                <td>{{course.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

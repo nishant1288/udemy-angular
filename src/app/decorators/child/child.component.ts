@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ChildComponent {
 
-  @Input() recieveMsg : string = ''
+  @Input() recieveMsg: string = '';
+  @Input() recieveCourses: { id: number, name: string }[] = [];
 
 }

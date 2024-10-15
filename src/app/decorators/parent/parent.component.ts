@@ -7,6 +7,21 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
 
-  displayMsg : string = 'I am coming from Parent component'
+  displayMsg: string = 'I am coming from Parent component';
+  // 
+  courses: { id: number, name: string }[] = [
+    {
+      id: 1,
+      name: 'Javascript'
+    },
+    {
+      id: 2,
+      name: 'Angular'
+    },
+    {
+      id: 3,
+      name: 'React'
+    }
+  ]
 
 }
