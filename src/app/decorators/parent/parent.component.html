@@ -1,2 +1,7 @@
 <h2>Parent Component</h2>
-<app-child [recieveMsg]="displayMsg" [recieveCourses]="courses"></app-child>
+{{message}}
+<app-child 
+[recieveMsg]="displayMsg" 
+[recieveCourses]="courses"
+(myEvent)="recieveChildEvent($event)"
+></app-child>

@@ -24,4 +24,10 @@ export class ParentComponent {
     }
   ]
 
+  message: string = '';
+
+  recieveChildEvent(eventData: string) {
+    this.message = eventData
+  }
+
 }

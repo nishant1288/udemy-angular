@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -9,5 +9,11 @@ export class ChildComponent {
 
   @Input() recieveMsg: string = '';
   @Input() recieveCourses: { id: number, name: string }[] = [];
+
+  @Output() myEvent = new EventEmitter();
+
+  emitEvent() {
+    this.myEvent.emit('Event emitted from child component');
+  }
 
 }
