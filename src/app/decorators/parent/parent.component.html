@@ -1,7 +1,10 @@
 <h2>Parent Component</h2>
 {{message}}
-<app-child 
+<app-child *ngIf="itemsArr.length > 0"
 [recieveMsg]="displayMsg" 
 [recieveCourses]="courses"
 (myEvent)="recieveChildEvent($event)"
+[itemsArrayFromParent]="itemsArr"
+(emitIndex)="deleteItems($event)"
 ></app-child>
+<button (click)="addItems()" >Click to add item</button>

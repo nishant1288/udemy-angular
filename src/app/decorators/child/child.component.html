@@ -18,4 +18,12 @@
     </table>
 </div>
 
-<button (click)="emitEvent()" >Click Me</button>
+<button (click)="emitEvent()">Click Me</button>
+
+<div>
+    <ul>
+        <li *ngFor="let item of itemsArrayFromParent; let i = index">
+            {{item}} <button (click)="outputEventForIndexDelete(i)">Delete</button>
+        </li>
+    </ul>
+</div>

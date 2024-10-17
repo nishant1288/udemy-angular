@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-parent',
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css']
 })
-export class ParentComponent {
+export class ParentComponent implements OnInit{
 
   displayMsg: string = 'I am coming from Parent component';
   // 
@@ -30,4 +30,21 @@ export class ParentComponent {
     this.message = eventData
   }
 
+
+  itemsArr = ['item1', 'item2'];
+
+  addItems() {
+    const item = `item${this.itemsArr.length + 1}`;
+    this.itemsArr.push(item);
+  }
+
+  deleteItems(index: number) {
+    if (index >= 0 && index < this.itemsArr.length) {
+      this.itemsArr.splice(index, 1)
+    }
+  }
+
+  ngOnInit(): void {
+    console.log('Parent Initialised')
+  }
 }
